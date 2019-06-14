@@ -1,5 +1,7 @@
 FS 1030 – Database Design and Principles, Take Home Assignment #2 
 
+Stack used: HTML, CSS, Node, Express, MySQL
+
 Question 1 - (answer is located in Question 1 folder)
 Write SQL statements for the Library Relational Database Schema attached. Specify the appropriate keys and referential triggered actions. Insert at least 3 records in each table. 
 
