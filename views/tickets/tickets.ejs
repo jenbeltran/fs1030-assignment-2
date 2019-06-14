@@ -1,0 +1,39 @@
+<%- include('../partials/header'); -%>
+
+<div class="container form-title">
+    <h1>My Tickets</h1>
+</div>
+
+<div class="table-wrapper">
+    <table class="table table-hovered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Ticket #</th>
+                <th scope="col">Subject</th>        
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+        <% for(let i=0; i < ticketInfo.length; i++) {%>
+            <tr>
+                <th scope="row"><%= ticketInfo[i].id %></th>>
+                <td><%= ticketInfo[i].subject %></td>       
+                <td><%= ticketInfo[i].status %></td>              
+                <td>
+                    <a href="/tickets/<%=ticketInfo[i].id%>" rel="noopener">See Details</a>
+                </td>
+            </tr>
+        <% } %>
+        </tbody>
+    </table>
+   
+<!-- <p class="text-center">No players found. Go <a href="/add">here</a> to add players.</p> -->
+
+</div>
+</div>
+
+
+<%- include('../partials/footer'); -%>
+

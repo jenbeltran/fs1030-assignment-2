@@ -1,0 +1,21 @@
+<%- include('../partials/header'); -%>
+
+<div class="container form-title" style="width: 350px;">
+    <h1>Add a new Ticket</h1>
+</div>
+
+<div class="container card bg-light" style="width: 40rem;">
+    <form action="/tickets" method="POST">
+        <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" class="form-control" placeholder="Enter subject">
+        </div>
+        <div class="form-group">
+            <label>Details</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="details" placeholder="Details of issue"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<%- include('../partials/footer'); -%>

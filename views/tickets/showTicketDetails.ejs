@@ -1,0 +1,22 @@
+<%- include('../partials/header'); -%>
+
+<div class="container">
+    <% for(let i=0; i < ticketDetails1.length; i++) {%>
+    <h2>Ticket #<%=ticketDetails1[i].id%>:  <%=ticketDetails1[i].subject%></h2>
+    <% } %>
+
+    <div class="container">
+    <% for(let i=0; i < ticketDetails2.length; i++) {%>         
+            <div class="card-body d-inline-block">
+                <p> Date Created: <%=ticketDetails2[i].date_created%> </p>
+                <p> Details: <%=ticketDetails2[i].details%></p>
+                <p> Created By: <%=ticketDetails2[i].name%> </p>
+            </div> 
+    <% } %>
+</div>
+
+<%- include('./commentBox.ejs'); -%>
+
+</div>
+
+<%- include('../partials/footer'); -%>

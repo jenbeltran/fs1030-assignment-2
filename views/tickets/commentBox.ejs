@@ -1,0 +1,9 @@
+<% for(let i=0; i < ticketDetails1.length; i++) {%>
+<div class="form-group">
+    <form action="/tickets/<%=ticketDetails1[i].id%>" method="POST">
+        <label>Add a Comment</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="comment"></textarea>
+        <button type="submit" class="btn btn-outline-warning">Submit</button>
+    </form>
+</div>
+<% } %>

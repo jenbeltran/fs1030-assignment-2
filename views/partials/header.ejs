@@ -1,0 +1,42 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<link href="ticketSite.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+<% if (!email) { %>
+     <a class="navbar-brand" href="/">Tickets</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+            </ul> 
+<% } else { %>
+            <a class="navbar-brand" href="/tickets">My Tickets</a>
+            <a class="navbar-brand" href="/tickets/new">Create Ticket</a>
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <p class="navbar-welcome">
+                        Welcome, <%=email %>
+                    </p>
+                </li>
+                <li class="nav-item active">
+                    <a class="btn btn-sm btn-warning" href="/logout">Logout</a>
+                </li>
+            </ul>
+<%}%>  
+    </nav>
+</div>
+
+
+
