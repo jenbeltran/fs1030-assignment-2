@@ -4,7 +4,7 @@
 var db = require('../database');
 
 //ADD A NEW TICKET
-//NEW route - shows the new book form
+//NEW route - shows the new ticket form
 function addNewTicketRoute(req, res) {
 	res.render('tickets/newTicketForm', {
 		email  : req.session.email,
