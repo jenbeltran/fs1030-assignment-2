@@ -1,9 +1,9 @@
 FS 1030 – Database Design and Principles, Take Home Assignment #2 
 
-Question 1 - answer in Question 1 folder
+Question 1 - (answer is located in Question 1 folder)
 Write SQL statements for the Library Relational Database Schema attached. Specify the appropriate keys and referential triggered actions. Insert at least 3 records in each table. 
 
-Question 2 - npm install & npm start 
+Question 2 - (please npm install & npm start)
 Design a customer support/support ticketing website. The website should have: 
 1)  A registration page–To register new customers. 
 2)  A login page–Where customers and support staff can login. 
